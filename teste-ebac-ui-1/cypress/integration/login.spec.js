@@ -19,7 +19,7 @@ context('Funcionalidade Login', () =>{
 
    })
    
-   it('Deve exibir uma mensagem de erro ao inserir usuario ou senha inválidos', () =>{
+   it('Deve exibir uma mensagem de erro ao inserir usuario inválidos', () =>{
       cy.get('#username').type('ebac@teste.com')
       cy.get('#password').type('teste@teste.com')
       cy.get('.woocommerce-form > .button').click()
